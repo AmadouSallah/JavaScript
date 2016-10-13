@@ -16,6 +16,9 @@ Passing this string to console.log should show something like this:
 When you have a program that generates this pattern, define a variable size = 8 and change
 the program so that it works for any size, outputting a grid of the given width and height.
 */
+
+console.log("First solution:\n");
+
 var rows = 8, columns = 4;
 
 for (var i = 0; i < rows; i++) {
@@ -27,3 +30,15 @@ for (var i = 0; i < rows; i++) {
   str.slice(0, -1);
   console.log(str);
 }
+
+console.log("\nSecond solution:\n");
+
+var size = 8, result = "";
+for (var i = 0; i < size; i++) {
+  for (var j = 0; j < size; j++) {
+    result += ((i + j) % 2 == 0) ? " " : "#";
+  }
+  result += "\n";
+}
+
+console.log(result);
