@@ -30,3 +30,14 @@ Having range understand negative step values is probably best done by writing tw
 
 It might also be worthwhile to use a different default step, namely, -1, when the end of the range is smaller than the start. That way, range(5, 2) returns something meaningful, rather than getting stuck in an infinite loop.
 */
+
+// Part 1:
+function range(start, end) {
+  var arr = [];
+  for (var i = start; i <= end; i++)
+    arr.push(i);
+
+  return arr;
+}
+
+console.log(range(1, 10));
