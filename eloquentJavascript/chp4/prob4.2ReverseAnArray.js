@@ -15,3 +15,16 @@ reverseArrayInPlace(arrayValue);
 console.log(arrayValue); // → [5, 4, 3, 2, 1]
 
 */
+
+function reverseArray(array) {
+  var n = array.length;
+  var result = [];
+
+  for (var i = 0; i < n; i++)
+    result[i] = array[n-i-1];
+
+  return result;
+}
+
+console.log(reverseArray(["A", "B", "C"])); // → ["C", "B", "A"];
+
